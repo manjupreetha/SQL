@@ -1,0 +1,6 @@
+--Find Table name using Column name in that table
+
+SELECT COLUMN_NAME, *
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE COLUMN_NAME LIKE '%ColumnName%'
+ORDER BY TABLE_NAME ASC
