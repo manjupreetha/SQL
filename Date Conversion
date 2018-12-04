@@ -1,0 +1,8 @@
+--Date Conversion
+
+SELECT * 
+FROM (
+	SELECT CONVERT(VARCHAR, CreatedDate, 101) as CreatedDate,*
+	FROM [dbo].TableName
+)ResultData
+WHERE ResultData.CreatedDate = '07/31/2018'
